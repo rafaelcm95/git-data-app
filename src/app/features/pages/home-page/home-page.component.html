@@ -1,4 +1,12 @@
-<div fxLayout="row" fxLayoutGap="12px">
-  <div fxFlex="50">foo</div>
-  <div fxFlex="50">bar</div>
+<div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="12px">
+  <div fxFlex="50">
+    <app-search-accordion 
+      [options]="searchOnGithubOpts"
+    ></app-search-accordion>
+  </div>
+  <div fxFlex="50">
+    <app-search-accordion
+      [options]="searchOnBitbucketOpts"
+    ></app-search-accordion>
+  </div>
 </div>

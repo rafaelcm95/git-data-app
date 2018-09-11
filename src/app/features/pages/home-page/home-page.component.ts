@@ -6,6 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
+  searchOnGithubOpts = {
+    title: 'Search on Github'
+  };
+
+  searchOnBitbucketOpts = {
+    title: 'Search on BitBucket'
+  };
 
   constructor() { }
 

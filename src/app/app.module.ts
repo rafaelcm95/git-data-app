@@ -9,20 +9,23 @@ import { NavbarComponent } from './features/shared-components/navbar/navbar.comp
 import { MaterialModule } from './modules/material/material.module';
 import { HomePageComponent } from './features/pages/home-page/home-page.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import { SearchAccordionComponent } from './features/pages/home-page/search-accordion/search-accordion.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomePageComponent
+    HomePageComponent,
+    SearchAccordionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

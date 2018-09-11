@@ -1,0 +1,16 @@
+.panel-header {
+    display: flex;
+    flex-direction: row;
+
+    .title {
+        margin: 0 12px 0 12px;
+    }
+}
+
+.input {
+    width: 100%;
+}
+
+.action-row {
+    border: none;
+}

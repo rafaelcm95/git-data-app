@@ -1,0 +1,15 @@
+<mat-accordion displayMode="default" [multi]="true"
+               [hideToggle]="false">
+    <mat-expansion-panel [hideToggle]="false">
+        <mat-expansion-panel-header class="panel-header">
+          <mat-icon>search</mat-icon>
+          <h3 class="title">{{ options.title }}</h3>
+        </mat-expansion-panel-header>
+        <mat-form-field class="input">
+            <input matInput placeholder="Type search here" [(ngModel)]="inputValue">
+        </mat-form-field>
+        <mat-action-row class="action-row">
+            <button mat-flat-button color="primary" mat-button>Search it!</button>
+        </mat-action-row>
+    </mat-expansion-panel>
+</mat-accordion>
