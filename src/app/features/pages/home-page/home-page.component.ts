@@ -11,7 +11,8 @@ export class HomePageComponent implements OnInit {
   };
 
   searchOnBitbucketOpts = {
-    title: 'Search on BitBucket'
+    title: 'Search on BitBucket',
+    isDisabled: true
   };
 
   constructor() { }
