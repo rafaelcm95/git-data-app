@@ -13,6 +13,8 @@ import { SearchAccordionComponent } from './features/pages/home-page/search-acco
 import { FormsModule } from '@angular/forms';
 import { SidebarComponent } from './features/shared-components/sidebar/sidebar.component';
 import { WelcomeCardComponent } from './features/pages/home-page/welcome-card/welcome-card.component';
+import { AppDividerComponent } from './features/shared-components/app-divider/app-divider.component';
+import { AboutCardComponent } from './features/pages/home-page/about-card/about-card.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { WelcomeCardComponent } from './features/pages/home-page/welcome-card/we
     HomePageComponent,
     SearchAccordionComponent,
     SidebarComponent,
-    WelcomeCardComponent
+    WelcomeCardComponent,
+    AppDividerComponent,
+    AboutCardComponent
   ],
   imports: [
     BrowserModule,
