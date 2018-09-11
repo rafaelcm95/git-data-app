@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import * as Highcharts from 'highcharts';
+import * as _ from 'lodash';
 
 @Component({
   selector: 'app-chart',
@@ -7,16 +8,22 @@ import * as Highcharts from 'highcharts';
   styleUrls: ['./chart.component.scss']
 })
 export class ChartComponent implements OnInit {
+  Highcharts = Highcharts;
   @Input()
   private options: Object = {};
-  private defaultOpts: Object = {};
+  private defaultOpts: Object = {
+    credits: false,
+    chart: {
+      backgroundColor: 'transparent'
+    }
+  };
   private _options: Object;
 
   constructor() {
-    this._options = Object.assign(this.defaultOpts, this.options);
   }
 
   ngOnInit() {
+    this._options = _.merge(this.options, this.defaultOpts);
   }
 
 }

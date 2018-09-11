@@ -17,6 +17,7 @@ import { AppDividerComponent } from './features/shared-components/app-divider/ap
 import { AboutCardComponent } from './features/pages/home-page/about-card/about-card.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { ChartComponent } from './features/shared-components/chart/chart.component';
+import { DonateBarComponent } from './features/shared-components/donate-bar/donate-bar.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ChartComponent } from './features/shared-components/chart/chart.compone
     WelcomeCardComponent,
     AppDividerComponent,
     AboutCardComponent,
-    ChartComponent
+    ChartComponent,
+    DonateBarComponent
   ],
   imports: [
     BrowserModule,
