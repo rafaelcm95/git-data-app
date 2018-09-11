@@ -1,12 +1,14 @@
+<mat-card class="welcome-card mat-elevation-z0">
+  <mat-card-header>
+    <mat-card-title class="welcome-title">Welcome</mat-card-title>
+    <mat-card-subtitle class="welcome-subtitle">Prepared to know everything about your account?</mat-card-subtitle>
+  </mat-card-header>
+</mat-card>
 <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="12px">
   <div fxFlex="50">
-    <app-search-accordion 
-      [options]="searchOnGithubOpts"
-    ></app-search-accordion>
+    <app-search-accordion [options]="searchOnGithubOpts"></app-search-accordion>
   </div>
   <div fxFlex="50">
-    <app-search-accordion
-      [options]="searchOnBitbucketOpts"
-    ></app-search-accordion>
+    <app-search-accordion [options]="searchOnBitbucketOpts"></app-search-accordion>
   </div>
 </div>
