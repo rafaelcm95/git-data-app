@@ -11,13 +11,17 @@ import { HomePageComponent } from './features/pages/home-page/home-page.componen
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SearchAccordionComponent } from './features/pages/home-page/search-accordion/search-accordion.component';
 import { FormsModule } from '@angular/forms';
+import { SidebarComponent } from './features/shared-components/sidebar/sidebar.component';
+import { WelcomeCardComponent } from './features/pages/home-page/welcome-card/welcome-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomePageComponent,
-    SearchAccordionComponent
+    SearchAccordionComponent,
+    SidebarComponent,
+    WelcomeCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,24 @@
+.menu-title {
+    margin: 24px 0px 24px;
+    text-align: center;
+    width: 100%;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    button {
+        width: 100%;
+    }
+}
+
+.menu-footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+}
