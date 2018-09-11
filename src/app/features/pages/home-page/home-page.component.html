@@ -12,4 +12,14 @@
 <app-divider></app-divider>
 <section class="about">
   <app-about-card></app-about-card>
+  <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="12px">
+    <div class="chart-container" fxFlex="50">
+      <app-chart [options]="sampleChartOptions"></app-chart>
+    </div>
+    <div class="chart-container" fxFlex="50">
+      <app-chart [options]="secondSampleChartOptions"></app-chart>
+    </div>
+  </div>
 </section>
+<app-divider></app-divider>
+<app-donate-bar></app-donate-bar>

@@ -15,6 +15,9 @@ import { SidebarComponent } from './features/shared-components/sidebar/sidebar.c
 import { WelcomeCardComponent } from './features/pages/home-page/welcome-card/welcome-card.component';
 import { AppDividerComponent } from './features/shared-components/app-divider/app-divider.component';
 import { AboutCardComponent } from './features/pages/home-page/about-card/about-card.component';
+import { HighchartsChartModule } from 'highcharts-angular';
+import { ChartComponent } from './features/shared-components/chart/chart.component';
+import { DonateBarComponent } from './features/shared-components/donate-bar/donate-bar.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,9 @@ import { AboutCardComponent } from './features/pages/home-page/about-card/about-
     SidebarComponent,
     WelcomeCardComponent,
     AppDividerComponent,
-    AboutCardComponent
+    AboutCardComponent,
+    ChartComponent,
+    DonateBarComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +38,8 @@ import { AboutCardComponent } from './features/pages/home-page/about-card/about-
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    FormsModule
+    FormsModule,
+    HighchartsChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

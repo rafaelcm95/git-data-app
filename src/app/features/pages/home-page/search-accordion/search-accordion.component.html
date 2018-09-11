@@ -1,6 +1,6 @@
 <mat-accordion displayMode="default" [multi]="true"
                [hideToggle]="false">
-    <mat-expansion-panel [hideToggle]="false">
+    <mat-expansion-panel [hideToggle]="false" [disabled]="options.isDisabled !== null ? options.isDisabled : false">
         <mat-expansion-panel-header class="panel-header">
           <mat-icon>search</mat-icon>
           <h3 class="title">{{ options.title }}</h3>
