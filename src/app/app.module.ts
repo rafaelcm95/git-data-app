@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './features/shared-components/navbar/navbar.component';
 import { MaterialModule } from './modules/material/material.module';
 import { HomePageComponent } from './features/pages/home-page/home-page.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HomePageComponent } from './features/pages/home-page/home-page.componen
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
