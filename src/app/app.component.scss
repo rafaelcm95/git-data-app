@@ -1,0 +1,16 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+
+    .app-container {
+        margin-top: 70px;
+        padding: 0 8px;
+    }
+}

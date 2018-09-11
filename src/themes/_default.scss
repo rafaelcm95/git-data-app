@@ -10,6 +10,6 @@ $theme: mat-light-theme($_primary, $_accent, $_warning);
 
 @include angular-material-theme($theme);
 
-$primary: $_primary;
-$secondary: $_accent;
-$warning: $_warning;
+$primary: mat-color($_primary);
+$secondary: mat-color($_accent);
+$warning: mat-color($_warning);
